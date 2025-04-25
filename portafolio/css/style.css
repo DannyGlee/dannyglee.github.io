@@ -1,0 +1,90 @@
+/* ================================
+   RESET GENERAL
+=================================*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ================================
+     BODY & LAYOUT
+  =================================*/
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: sans-serif;
+    color: white;
+  
+    background: radial-gradient(circle at top left, #252425, #151516, #000000, #363736);
+    background-size: 200% 200%;
+    animation: gradientShift 20s ease infinite;
+  }
+  
+  /* Background animation */
+  @keyframes gradientShift {
+    0% {
+      background-position: 50% 0%;
+    }
+    50% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 50% 0%;
+    }
+  }
+  
+  /* ================================
+     FONTS
+  =================================*/
+  .roboto-condensed {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+  }
+  
+  .oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  /* ================================
+     BANNER & MAIN TITLE
+  =================================*/
+  .banner {
+    width: 80%;
+  }
+  
+  .main-title {
+    font-size: 150px;
+    background: linear-gradient(90deg, #ff6ec4, #7873f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* ================================
+     NAVIGATION
+  =================================*/
+  .navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar li:hover {
+    color: #00bcd4; /* Puedes cambiarlo por tu color favorito */
+  }
+  
